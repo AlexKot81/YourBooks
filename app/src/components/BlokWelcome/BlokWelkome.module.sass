@@ -6,10 +6,85 @@
 
     .welcome_text
         width: 50%
-        padding-right: 5%
+        padding: 10% 5% 10% 0
+
+        h3
+            color: white
+            font-size: 21px
+            position: relative
+            margin-left: 45px
+
+            &::after
+                content: ' '
+                width: 35px
+                height: 2px
+                background-color: #FFCA42
+                /*font-size: 50px
+                position: absolute
+                left: -45px
+                top: 15px
+
+
+        h2
+            color: white
+            font-size: 64px
+            margin: 10px 0 24px
+
+        p
+            color: #B4C7E7
+            font-size: 18px
+
+        .btn_welcome
+            display: flex
+            align-items: center
+
+            button:nth-child(1)
+                margin-right: 51px
+
+
+    .info_book
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-gap: 10px
+        margin-left: 20px
+
+        &>div
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: flex-start
+
+            ul
+                padding-inline-start: 0
+                margin-top: 47px
+                margin-bottom: 12px
+
+                li
+                    list-style-type: none
+                    position: relative
+                    font-size: 24px
+                    color: white
+
+                li::before
+                    /*color: #FFCA42
+                    content: ' '
+                    /*font-size: 40px
+                    width: 16px
+                    height: 16px
+                    border-radius: 50%
+                    background-color: #FFCA42
+                    position: absolute
+                    left: -26px
+                    top: 10px
+
+            p
+                color: #B4C7E7
+                font-size: 17px
 
     .welcome_book
         width: 50%
 
         img
             width: 100%
+
+

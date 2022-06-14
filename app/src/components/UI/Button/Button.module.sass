@@ -1,9 +1,27 @@
 .btn
-    background-color: #FFCA42
+    background-color: #1B3764
     padding: 19px 52px
-    color: #1B3764
+    color: white
     cursor: pointer
     font-size: 19px
     border: none
+    position: relative
+    transition: background-color 0.7s
 
-    
+    &::after
+        content: " "
+        width: 90%
+        height: 2px
+        background-color: white
+        position: absolute
+        top: 80%
+        left: 5%
+
+    &:hover
+        background-color: #FFCA42
+        color: #1B3764
+
+    &:hover::after
+        background-color: #FFCA42
+        color: #1B3764
+        

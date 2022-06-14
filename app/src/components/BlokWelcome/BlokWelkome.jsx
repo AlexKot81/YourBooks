@@ -6,14 +6,14 @@ export default function BlokWelkome() {
   return (
     <div className={s.welcome}>
         <div className={s.welcome_text}>
-            <p>Welcome To Pages!!!</p>
+            <h3>Welcome To Pages!!!</h3>
             <h2>Your Books From The Best Writers</h2>
             <p>We believe that reading books are essential to a healthy culture. They are where authors can connect with readers.</p>
-            <div>
-                <Button />
-                <a href="#">Read Free Demo</a>
+            <div className={s.btn_welcome}>
+                <Button props={"Order Today"}/>
+                <Button props={"Read Free Demo"}/>
             </div>
-            <div>
+            <div className={s.info_book}>
                 <div>
                     <ul>
                         <li>Pages</li>
@@ -22,15 +22,15 @@ export default function BlokWelkome() {
                 </div>
                 <div>
                     <ul>
-                        <li>Pages</li>
+                        <li>Length:</li>
                     </ul>
-                    <p>250pages</p>
+                    <p>10 Hours</p>
                 </div>
                 <div>
                     <ul>
-                        <li>Pages</li>
+                        <li>Rating:</li>
                     </ul>
-                    <p>250pages</p>
+                    <p>4.5/5 (305 ratings)</p>
                 </div>
             </div>
         </div>
