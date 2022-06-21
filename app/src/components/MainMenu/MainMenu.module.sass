@@ -1,5 +1,7 @@
+@import   ../_color
+
 .main_menu
-    background-color: #1B3764
+    background-color: $color_blue
     width: 100%
     margin: 0 auto
     display: flex
@@ -7,13 +9,13 @@
     justify-content: space-between
     height: 100px
     box-sizing: border-box
-    padding: 0 3%
+    padding: 0 2%
 
     .logo
         display: flex
         font-size: 26px
         align-items: center
-        color: white
+        color: $color_back_w
 
         .menu_logo
             width: 24.5px
@@ -28,11 +30,11 @@
         align-items: center
 
         a
-            color: white
+            color: $color_back_w
             font-size: 26px
             text-decoration: none
             padding: 10px 15px
             transition: color 0.5s
 
         a:hover
-            color: #FFCA42
+            color: $color_yellow

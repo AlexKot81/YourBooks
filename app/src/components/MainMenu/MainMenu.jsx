@@ -6,7 +6,7 @@ export default function MainMenu() {
   return (
     <div className={s.main_menu}>
         <div className={s.logo}>
-            <img src='Vector.png' alt="logo" className={s.menu_logo}/>
+            <img src='./img/Vector.png' alt="logo" className={s.menu_logo}/>
             <p>Pages</p>
         </div>
         <div className={s.menu_link}>

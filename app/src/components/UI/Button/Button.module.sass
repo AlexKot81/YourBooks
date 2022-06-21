@@ -1,7 +1,9 @@
+@import   ../../_color
+    
 .btn
-    background-color: #1B3764
+    background-color: $color_blue
     padding: 19px 52px
-    color: white
+    color: $color_back_w
     cursor: pointer
     font-size: 19px
     border: none
@@ -12,16 +14,16 @@
         content: " "
         width: 90%
         height: 2px
-        background-color: white
+        background-color: $color_back_w
         position: absolute
         top: 80%
         left: 5%
 
     &:hover
-        background-color: #FFCA42
-        color: #1B3764
+        background-color: $color_yellow
+        color: $color_blue
 
     &:hover::after
-        background-color: #FFCA42
-        color: #1B3764
+        background-color: $color_yellow
+        color: $color_blue
         

@@ -35,7 +35,7 @@ export default function BlokWelkome() {
             </div>
         </div>
         <div className={s.welcome_book}>
-            <img src='wel_book.png' alt='bast_book'/>
+            <img src='./img/dark_light.png' alt='bast_book'/>
         </div>
     </div>
   )
