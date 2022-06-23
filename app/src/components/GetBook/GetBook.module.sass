@@ -1,0 +1,33 @@
+@import '../_color'
+
+.getbook_box
+    padding: 70px 3%
+    display: flex
+    background-color: $color_blue
+    justify-content: space-between
+
+    .getbook_text
+        display: flex
+        flex-direction: column
+        justify-content: center
+        width: 50%
+        padding-right: 5%
+
+        .getbook_start
+            font-size: 45px
+            color: $color_back_w
+            margin-bottom: 54px
+            position: relative
+
+            &::after
+                content: ""
+                width: 50px
+                height: 3px
+                background-color: $color_yellow
+                position: absolute
+                left: 0
+                top: calc( 100% + 27px  )
+
+        .description_getbook
+            color: $color_lite_blue
+            font-size: 19px

@@ -1,10 +1,11 @@
 import React from 'react'
+import NameBlok from '../UI/NameBlok/NameBlok'
 import s from './AuthorsBook.module.sass'
 
 export default function AuthorsBook() {
   return (
     <div className={s.authors_book}>
-            <h2>The Author&prime;s Book</h2>
+        <NameBlok props={"The Author's Book"}/>
             <div className={s.books_info}>
                 <div className={s.card_book}>
                     <div className={s.img_book}>

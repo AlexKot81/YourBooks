@@ -1,10 +1,11 @@
 import React from 'react'
+import NameBlok from '../UI/NameBlok/NameBlok'
 import s from './Trusted.module.sass'
 
 export default function Trusted() {
   return (
     <div className={s.trusted_box}>
-        <h2 className={s.trust_start}>Trusted By The Best</h2>
+        <NameBlok props={"Trusted By The Best"}/>
         <div className={s.trust_company}>
             <div className={s.trust_card}>
                 <img src='/img/amazon_logo.png' alt='Logo trust' className={s.trust_logo}/>

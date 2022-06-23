@@ -1,0 +1,47 @@
+@import '../_color'
+
+.learn_blok
+    padding: 136px 3% 120px
+    background-color: $color_back_lb
+
+    .text_foto
+        display: flex
+        justify-content: space-between
+
+        .learn_cards
+            width: 50%
+            margin-left: 3%
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            grid-gap: 20px
+
+            .card
+                width: 300px
+                height: 270px
+                background-color: $color_card_learn
+
+                .card_num
+                    border-radius: 50%
+                    width: 50px
+                    height: 50px
+                    background-color: $color_yellow
+                    font-size: 23px
+                    color: $color_blue
+                    text-align: center
+                    padding-top: 7px
+                    margin-top: 30px
+                    margin-left: 30px
+
+                .card_text
+                    font-size: 24px
+                    color: $color_blue
+                    margin: 30px
+
+        .pos_img
+            width: 40%
+            margin-left: 3%
+            border: 10px solid $color_yellow
+
+            .pic_foto
+                width: 105%
+                transform: translate(-15%, -8%)
