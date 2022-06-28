@@ -22,7 +22,9 @@ export default function LearnBlok() {
             </div>
         </div>
         <div className={s.pos_img}>
-            <img src='./img/learn_img.png' alt='pic_fot' className={s.pic_foto}/>
+          <div>
+            <img src='/img/learn_img.png' alt='pic_fot' className={s.pic_foto}/>
+          </div>
         </div>
       </div>
     </div>

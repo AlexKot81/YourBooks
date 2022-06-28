@@ -2,4 +2,58 @@
 
 .footer
     background-color: $color_blue
-    
+    padding: 90px 3% 145px
+    display: flex
+    justify-content: space-between
+
+    .footer_explore
+        margin-left: 30px
+
+        h4
+            color: $color_back_w
+            font-size: 24px
+            margin-bottom: 24px
+
+        ul
+            list-style: none
+
+            li
+                color: $color_lite_blue
+                font-size: 18px
+                margin-bottom: 9px
+                padding-left: 40px
+                position: relative
+                transition: color 0.5s 
+
+                &::before
+                    content: "..."
+                    color: $color_yellow
+                    font-size: 45px
+                    margin-right: 10px
+                    position: absolute
+                    top: -130%
+                    left: 0px
+
+                &:hover
+                    color: $color_yellow
+                    cursor: pointer
+    .footer_contact
+        display: flex
+        flex-direction: column
+        
+        h4
+            color: $color_back_w
+            font-size: 24px
+            margin-bottom: 24px
+
+    .tab_contact
+        text-align: start
+
+        td
+            justify-content: left
+            vertical-align: top
+            color: $color_lite_blue
+
+        td + td
+            padding-left: 30px
+            padding-bottom: 20px

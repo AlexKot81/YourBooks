@@ -1,28 +1,30 @@
-require('dotenv').config()
-const express = require('express')
-const sequelize = require('./db')
-const models = require('./models/models')
-const cors = require('cors')
-const router = require ('./routes/index')
+const express = require('express');
+require('dotenv').config();
+require('./models/models');
 
-const PORT = process.env.PORT || 5000
+const cors = require('cors');
+const authorRouter = require('./router/authorRouter');
 
-const app = express()
+const sequelize = require('./db');
+const PORT = process.env.PORT;
+const app = express();
 
-app.use(cors())
-app.use(express.json())
-app.use('/api', router)
+app.use(cors());
+app.use(express.json());
+app.use('/api/author/', authorRouter);
 
-const start = async () => {
+const start = async () =>{
     try{
-        await sequelize.authenticate()
-        await sequelize.sync()
-        app.listen(PORT, ()=>console.log(`Сервер запущен на порту ${PORT}`))
-    }catch(e){
-        console.log(e)
+        await sequelize.authenticate();
+        await sequelize.sync();
+        app.listen(PORT, ()=>{
+            console.log('Сервер запущен...')
+        })
+    }catch(err){
+        console.log(err)
     }
 }
 
-start()
+start();
 
 

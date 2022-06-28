@@ -1,5 +1,6 @@
-
+import React, {useState, useEffect} from 'react';
 import './App.css';
+import { getAuthors } from "./requests";
 import AboutAuthor from './components/AboutAuthor/AboutAuthor';
 import Articles from './components/Articles/Articles';
 import AuthorsBook from './components/AuthorsBook/AuthorsBook';
@@ -11,6 +12,17 @@ import MainMenu from './components/MainMenu';
 import Trusted from './components/Trusted/Trusted';
 
 function App() {
+
+  const [state, setState] = useState([])
+
+  useEffect(()=> {
+    getAuthors(setState)
+  }, [])
+
+  
+
+  console.log(state)
+
   return (
     <div className="App">
       <MainMenu/>
