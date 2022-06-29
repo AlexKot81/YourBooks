@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
-import { getAuthors } from "./requests";
+import { getAuthors, getBooks, getArticles, getCompany, getScills } from "./requests";
 import AboutAuthor from './components/AboutAuthor/AboutAuthor';
 import Articles from './components/Articles/Articles';
 import AuthorsBook from './components/AuthorsBook/AuthorsBook';
@@ -14,25 +14,34 @@ import Trusted from './components/Trusted/Trusted';
 function App() {
 
   const [state, setState] = useState([])
+  const [stbooks, setBooks] = useState([])
+  const [startikles, setArticles] = useState([])
+  const [stcompany, setCompany] = useState([])
+  const [stscills, setScills] = useState([])
+
 
   useEffect(()=> {
     getAuthors(setState)
+    getBooks(setBooks)
+    getArticles(setArticles)
+    getCompany(setCompany)
+    getScills(setScills)
   }, [])
 
   
 
-  console.log(state)
+  console.log(state, stbooks, startikles, stcompany, stscills)
 
   return (
     <div className="App">
       <MainMenu/>
       <BlokWelcome/>
-      <AuthorsBook/>
+      <AuthorsBook books={stbooks}/>
       <AboutAuthor/>
-      <Trusted />
+      <Trusted company={stcompany}/>
       <GetBook />
-      <LearnBlok />
-      <Articles />
+      <LearnBlok scills={stscills}/>
+      <Articles articles={startikles}/>
       <Footer />
     </div>
   );

@@ -11,7 +11,7 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-app.use('/api/author/', authorRouter);
+app.use('/api/', authorRouter);
 
 const start = async () =>{
     try{

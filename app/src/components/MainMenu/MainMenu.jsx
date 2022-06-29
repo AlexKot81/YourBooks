@@ -15,7 +15,7 @@ export default function MainMenu() {
             <a href="#">Pages</a>
             <a href="#">Contact Us</a>
         </div>
-        <Button props={"Order Today"}/>
+        <Button className={s.btn_menu} props={"Order Today"}/>
     </div>
   )
 }
