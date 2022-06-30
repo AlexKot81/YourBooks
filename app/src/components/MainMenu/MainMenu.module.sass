@@ -10,6 +10,8 @@
     height: 100px
     box-sizing: border-box
     padding: 0 2%
+    position: relative
+    z-index: 1000
 
     .menu_link
         display: flex
@@ -29,8 +31,19 @@
         display: block
 
     @media screen and ( max-width: 1080px )
+
         .menu_link
-            display: none
+            position: absolute
+            right: 0
+            top: 100px
+            flex-direction: column
+            background-color: $color_lite_blue
+            z-index: 5000
+            padding: 20px
+
+            a
+             color: $color_blue
+           
         
         .btn_menu
             display: none

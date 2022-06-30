@@ -10,7 +10,9 @@ export default function MainMenu() {
   return (
     <div className={s.main_menu}>
       <Logo />
-      <BtnIcon />
+      <MediaQuery minWidth={1100}>
+        <BtnIcon />
+      </MediaQuery>
       <div className={s.menu_link}>
           <a href="#">Home</a>
           <a href="#">About</a>
@@ -20,7 +22,9 @@ export default function MainMenu() {
       <MediaQuery minWidth={700}>
         <Button props={"Order Today"}/>
       </MediaQuery>
-      <SmlMenu />
+      <MediaQuery maxWidth={1080}>
+        <SmlMenu />
+      </MediaQuery>
     </div>
   )
 }
