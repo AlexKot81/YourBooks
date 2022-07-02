@@ -28,20 +28,19 @@ function App() {
     getScills(setScills)
   }, [])
 
-  
 
-  console.log(state, stbooks, startikles, stcompany, stscills)
+  //console.log(state, stbooks, startikles, stcompany, stscills)
 
   return (
     <div className="App">
-      <MainMenu/>
+      <MainMenu />
       <BlokWelcome/>
       <AuthorsBook books={stbooks}/>
       <AboutAuthor/>
       <Trusted company={stcompany}/>
       <GetBook />
       <LearnBlok scills={stscills}/>
-      <Articles articles={startikles}/>
+      <Articles articles={startikles} />
       <Footer />
     </div>
   );

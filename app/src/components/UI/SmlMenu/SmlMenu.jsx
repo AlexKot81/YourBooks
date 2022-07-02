@@ -3,10 +3,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import s from './SmlMenu.module.sass'
 
 
-export default function SmlMenu() {
+export default function SmlMenu({activ, setActiv}) {
   return (
     <div className={s.sml_menu}>
-        <div><FontAwesomeIcon icon="fa-solid fa-bars" /></div>
+        <div onClick={()=> setActiv(!activ)}><FontAwesomeIcon icon="fa-solid fa-bars" /></div>
     </div>
   )
 }

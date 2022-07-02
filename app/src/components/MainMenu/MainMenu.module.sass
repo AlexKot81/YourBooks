@@ -34,12 +34,19 @@
 
         .menu_link
             position: absolute
-            right: 0
+            right: -200px
             top: 100px
             flex-direction: column
             background-color: $color_lite_blue
             z-index: 5000
             padding: 20px
+            transition: right 0.5s
+
+            .activ
+                right: 0
+
+            .activ_n
+                right: 50%
 
             a
              color: $color_blue
