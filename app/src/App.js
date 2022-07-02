@@ -18,6 +18,7 @@ function App() {
   const [startikles, setArticles] = useState([])
   const [stcompany, setCompany] = useState([])
   const [stscills, setScills] = useState([])
+  const [menuActive, setMenuActive] = useState(false)
 
 
   useEffect(()=> {
@@ -32,8 +33,8 @@ function App() {
   //console.log(state, stbooks, startikles, stcompany, stscills)
 
   return (
-    <div className="App">
-      <MainMenu />
+    <div className="App" >
+      <MainMenu menuactiv={menuActive} setmenuactiv={setMenuActive}/>
       <BlokWelcome/>
       <AuthorsBook books={stbooks}/>
       <AboutAuthor/>

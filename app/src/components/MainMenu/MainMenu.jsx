@@ -6,9 +6,7 @@ import Logo from '../UI/Logo/Logo'
 import SmlMenu from '../UI/SmlMenu/SmlMenu'
 import s from './MainMenu.module.sass'
 
-export default function MainMenu() {
-
-  const [menuActive, setMenuActive] = useState(false)
+export default function MainMenu({menuactiv, setmenuactiv}) {
 
   return (
     <div className={s.main_menu}>
@@ -16,7 +14,7 @@ export default function MainMenu() {
       <MediaQuery minWidth={1100}>
         <BtnIcon />
       </MediaQuery>
-      <div className={s.menu_link} style={{right: menuActive && '0'}}>
+      <div className={s.menu_link} style={{right: menuactiv && '0'}} onClick={()=>setmenuactiv(false)}>
           <a href="#">Home</a>
           <a href="#">About</a>
           <a href="#">Pages</a>
@@ -26,9 +24,8 @@ export default function MainMenu() {
         <Button props={"Order Today"}/>
       </MediaQuery>
       <MediaQuery maxWidth={1080}>
-        <SmlMenu activ={menuActive} setActiv={setMenuActive}/>
+        <SmlMenu activ={menuactiv} setActiv={setmenuactiv}/>
       </MediaQuery>
-      {console.log(menuActive)}
     </div>
   )
 }
