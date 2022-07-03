@@ -20,10 +20,10 @@ export default function MainMenu({menuactiv, setmenuactiv}) {
           <a href="#">Pages</a>
           <a href="#">Contact Us</a>
       </div>
-      <MediaQuery minWidth={700}>
+      <MediaQuery minWidth={450}>
         <Button props={"Order Today"}/>
       </MediaQuery>
-      <MediaQuery maxWidth={1080}>
+      <MediaQuery maxWidth={880}>
         <SmlMenu activ={menuactiv} setActiv={setmenuactiv}/>
       </MediaQuery>
     </div>

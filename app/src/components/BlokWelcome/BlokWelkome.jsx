@@ -1,4 +1,5 @@
 import React from 'react'
+import MediaQuery from 'react-responsive'
 import Button from '../UI/Button'
 import s from './BlokWelkome.module.sass'
 
@@ -11,7 +12,7 @@ export default function BlokWelkome() {
             <p>We believe that reading books are essential to a healthy culture. They are where authors can connect with readers.</p>
             <div className={s.btn_welcome}>
                 <Button props={"Order Today"}/>
-                <Button props={"Read Free Demo"}/>
+                <Button props={"Read Free Demo"} />
             </div>
             <div className={s.info_book}>
                 <div>
