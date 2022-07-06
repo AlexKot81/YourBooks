@@ -105,5 +105,15 @@
         flex-direction: column
         margin-right: 0
 
-        .welcome_text button:nth-child(1)
-            margin-right: 0
+    .welcome .welcome_text .btn_welcome button:nth-child(1)
+        margin-right: 0
+        margin-bottom: 20px
+
+@media screen and ( max-width: 520px )
+        
+    .welcome .info_book
+        grid-template-columns: 1fr
+        
+        &>div
+            align-items: center
+        

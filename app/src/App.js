@@ -29,9 +29,6 @@ function App() {
     getScills(setScills)
   }, [])
 
-
-  //console.log(state, stbooks, startikles, stcompany, stscills)
-
   return (
     <div className="App" >
       <MainMenu menuactiv={menuActive} setmenuactiv={setMenuActive}/>

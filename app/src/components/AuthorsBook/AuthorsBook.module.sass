@@ -67,10 +67,16 @@
 
     @media screen  and ( max-width: 935px )
         .books_info
-             grid-template-columns: repeat(1, 1fr)
+            grid-template-columns: 1fr
 
         .books_info div + div
             margin: 20px 0 0
+
+    @media screen  and ( max-width: 510px )
+        .books_info .card_book
+            flex-direction: column
+            align-items: center
+            margin-bottom: 30px
 
 
 
