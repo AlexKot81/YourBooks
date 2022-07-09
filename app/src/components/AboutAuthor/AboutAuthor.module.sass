@@ -85,7 +85,21 @@
         .info_authors
             width: 90%
 
-@media screen and ( max-width: 540 )
-    .about_authors .info_authors .data_author
-        grid-template-columns: 1fr
+@media screen and ( max-width: 490px )
+        .about_authors .info_authors .data_author
+            grid-template-columns: repeat( 1 , 1fr )
+            justify-items: center
+
+            div
+                display: flex
+                flex-direction: column
+                align-items: center
             
+
+@media screen and ( max-width: 480px )
+        .contact_author
+            flex-direction: column
+
+            img 
+                margin-bottom: 30px
+    
